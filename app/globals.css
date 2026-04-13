@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+/* Import des plugins v4 */
+@plugin "tailwindcss-animate";
+
+@font-face {
+  font-family: 'Bonnet';
+  src: url('/fonts/Bonnet-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bonnet';
+  src: url('/fonts/Bonnet-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Scotch';
+  src: url('/fonts/Scotch-Regular.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --secondary: #ed8000;
+  --primary: #6a9360;
+  --accent: #5fc142;
+  --primary-foreground: #ffffff;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --radius: 0.625rem;
+  /* ... tes autres variables ... */
+}
+
+/* Configuration du thème version 4 */
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  
+  --font-bonnet: "Bonnet", sans-serif;
+  --font-scotch: "Scotch", serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Ajout des couleurs de bordure pour que white/20 fonctionne */
+  --color-border: var(--border);
+}
+
+/* --- Tes styles personnalisés --- */
+
+.menu li:not(:last-child) {
+  @apply border-r border-white/20;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table_workshop {
+  @apply border-accent/60 border;
+}
+
+.table_workshop thead {
+  @apply bg-accent/10;
+}
+
+.table_workshop tbody {
+  @apply bg-gray-100;
+}
+
+.table_workshop tbody tr td {
+  @apply bg-white;
+}
+
+.table_workshop thead tr,
+.table_workshop tbody tr {
+  @apply grid grid-cols-1;
+}
+
+.table_workshop thead tr td {
+  @apply border-accent/40 bg-accent/10 flex h-20 items-center justify-center border-b p-2 text-base font-semibold text-gray-800;
+}
+
+.table_workshop tbody tr td {
+  @apply border-accent/40 flex h-20 items-center border-b p-2;
+}
+
+.table_workshop tbody tr td:nth-of-type(even) {
+  @apply bg-gray-100;
+}
+
+.image {
+  @apply relative h-[145px] w-[115px];
+}
+
+.letter-shadow {
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    4px 4px 8px rgba(0, 0, 0, 0.6),
+    6px 6px 12px rgba(0, 0, 0, 0.4),
+    8px 8px 16px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.letter-shadow-subtitle {
+  text-shadow: 
+    1px 1px 3px rgba(0, 0, 0, 0.7),
+    3px 3px 6px rgba(0, 0, 0, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
