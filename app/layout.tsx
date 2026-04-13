@@ -1,6 +1,6 @@
 "use client";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { useEffect } from "react";
 
 const inter = Inter({
