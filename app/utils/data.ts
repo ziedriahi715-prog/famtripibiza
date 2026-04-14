@@ -42,7 +42,7 @@ export const TrombinoscopeData = [
     {
       name: "Lisa",
       company: "XXL Happyness",
-      image: "/images/trombinoscope/Lisa.jpg",
+      image: "/images/trombinoscope/Lisa-XXL-Happyness.jpg",
     },
   ],
   // Row 3
