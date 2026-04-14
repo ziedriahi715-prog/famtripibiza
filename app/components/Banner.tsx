@@ -1,27 +1,40 @@
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-interface Banner {
+interface BannerProps {
   className?: string;
-  BannerTitleClass?: string;
+  // BannerTitleClass n'est plus nécessaire car le titre est dans l'image
 }
- 
-const Banner: React.FC<Banner> = ({
+
+const Banner: React.FC<BannerProps> = ({
   className = "",
-  BannerTitleClass = "",
 }) => {
   return (
     <div
       className={`
-        relative bg-[url('/images/banniere.png')] bg-cover bg-center-bottom bg-no-repeat px-4  h-[33vh] md:h-[60vh] ${className} 
+        relative 
+        /* 1. Chargement de l'image unique */
+        bg-[url('/images/banniere.png')] 
+        
+        /* 2. FORCE LE CENTRAGE HORIZONTAL ET VERTICAL (Correctif Mobile) */
+        bg-center 
+        
+        /* 3. COUVRE TOUTE LA ZONE SANS DÉFORMER */
+        bg-cover 
+        
+        /* 4. ÉVITE LA RÉPÉTITION */
+        bg-no-repeat 
+        
+        /* 5. HAUTEUR DE LA BANNIÈRE */
+        h-[33vh]      /* Hauteur sur Mobile */
+        md:h-[60vh]   /* Hauteur sur Ordinateur */
+        
+        /* 6. CLASSES SUPPLÉMENTAIRES ÉVENTUELLES */
+        ${className} 
        `}
     >
-      {/* Dark overlay for better contrast */}
-
-      {/* THE MICE EXPERT section in top right */}
-
-      {/* Main title at bottom center */}
+      {/* Puisque l'image contient tout (logos, texte, fond), 
+        le conteneur reste vide.
+      */}
     </div>
   );
 };
