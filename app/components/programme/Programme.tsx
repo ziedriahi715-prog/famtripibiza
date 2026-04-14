@@ -17,7 +17,7 @@ const days: DayProgramme[] = [
     label: "Vendredi 24 avril",
     title: "Vendredi 24 avril : Bienvenue à Ibiza",
     content: (
-      <>
+      <> 
         <ul className="list-disc space-y-3 py-2 pl-5">
           <li className="space-x-2">
             <b>14h20 :</b>

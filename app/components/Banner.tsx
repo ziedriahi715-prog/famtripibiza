@@ -6,7 +6,7 @@ interface Banner {
   className?: string;
   BannerTitleClass?: string;
 }
-
+ 
 const Banner: React.FC<Banner> = ({
   className = "",
   BannerTitleClass = "",
