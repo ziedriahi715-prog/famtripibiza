@@ -8,7 +8,7 @@ const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
 });
-
+ 
 export default function RootLayout({
   children,
 }: Readonly<{

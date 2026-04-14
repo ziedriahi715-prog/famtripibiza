@@ -32,7 +32,7 @@ const days: DayProgramme[] = [
             <span>
               Arrêt dans une ferme écologique.
             </span>
-          </li>          
+          </li>           
           <li className="space-x-2">
             <b>19h30 :</b>
             <span>Dîner dans un nouveau beach club.</span>
