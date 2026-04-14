@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <div className="md:mx-auto md:max-w-4xl">
       <div className="mb-[100px]">
-        <Banner className="h-[185px]" BannerTitleClass="top-[65%]" />
+        <Banner className="h-[185px]" />
         {children}
       </div>
     </div>
