@@ -9,11 +9,11 @@ const Column2 = () => {
           fill
           className="rounded-[20px] object-cover"
           src="/images/trombinoscope/Alize-AllianceMeeting.jpg"
-          alt="Alize - Alliance Meeting"
+          alt="Alizée - Alliance Meeting"
         />
         <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-2 rounded-b-[20px]">
           <p className="text-center text-sm">
-            Alize - <span className="font-bold">Alliance Meeting</span>
+            Alizée - <span className="font-bold">Alliance Meeting</span>
           </p>
         </div>
       </div>

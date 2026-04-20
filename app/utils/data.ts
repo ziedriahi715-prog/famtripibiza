@@ -7,12 +7,12 @@ export const TrombinoscopeData = [
       image: "/images/trombinoscope/Maud-Agence008.jpg",
     },
     {
-      name: "Alize",
+      name: "Alizée",
       company: "Alliance Meeting",
       image: "/images/trombinoscope/Alize-AllianceMeeting.jpg",
     },
     {
-      name: "Laetitia",
+      name: "Laëtitia",
       company: "Amedida",
       image: "/images/trombinoscope/Laetitia.jpg",
     },
@@ -58,7 +58,7 @@ export const TrombinoscopeData = [
       image: "/images/trombinoscope/Cynthia-IncentivosIbiza.jpg",
     },
     {
-      name: "Marlene",
+      name: "Marlène",
       company: "The MICE Experts",
       image: "/images/trombinoscope/Marlene-TheMICEExperts.jpg",
     },
